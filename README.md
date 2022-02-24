@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate / Template for Next.js using wagmi and ethers.js
 
-## Getting Started
+This template lets you start with a clean [Next.js](https://nextjs.org/) project as well as a "Connect Wallet" button that opens a modal for choosing between MetaMask and WalletConnect for connecting to Web3. It uses the [wagmi hook library](https://wagmi-xyz.vercel.app/).
 
-First, run the development server:
+## How to use
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Clone this repository by navigating to the directory of your choice on your local machine and using
+   `git clone https://github.com/luishauenstein/wagmi-next-starter`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run either `npm install` or `yarn install` to download all necessary packages.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Open the file `wagmi-provider-config.js`, which can be found at the root of the project, and put in you [Infura ID](https://infura.io/) (optional step, but recommended for serious projects). This file can also be used to add and remove ways to connect to Web3. In this case, please refer to the [wagmi documentation](https://wagmi-xyz.vercel.app/).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Run either `npm run dev` or `yarn run dev` to start the development server.
